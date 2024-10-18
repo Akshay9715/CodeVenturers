@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.timeline-container {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #ddd;
+}
+
+.event {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.event .date {
+  font-weight: bold;
+  color: #555;
+}
+
+.event .event-details {
+  margin-top: 5px;
+  color: #333;
+}
+
+.top-event {
+  color: green;
+}
+
+.top-event .date,
+.top-event .event-details {
+  font-weight: bold;
+}
+
+.top-event::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.timeline-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 200px; /* Adjust according to the position of the top event */
+  width: 4px;
+  height: 80px; /* Adjust the green bar length */
+  background-color: green;
+}
