@@ -1,85 +1,103 @@
+/* Global Styles */
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-nav{
-    display: flex;
-    background: linear-gradient(#89d2d9, #dde9ea);
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
-}
-
-.left{
-    display: flex;
-    font-size: 1.2rem;
-    gap: 20px;
-    width: 100%;
-    margin-left: 2%;
-}
-.sliet{
-    width: 10%;
-    font-size: larger;
-    font-weight: 800;
-}
-
-ul{
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    justify-content: space-between;
-    width: 100%;
-}
-li{
-    display: inline-block;
-    margin: 0% 5% 0%;
-    padding: 2%;
-}
-.login{
-    display: flex;
-    width: 100px; 
-    width: 100%;
-}
-
-.login:first-child{
-    margin: 5rem;
-}
-main{
-    background-color: #dde9ea;
-    height: 100vh;
-    display: flex;
-    position: relative;
-}
-.vertical-line {
-    position: absolute;
-    left: 80px; 
-    height: 100vh; 
-    width: 8px;
-    background-color: #89d2d9;
-}
-.home-icon {
-    position: absolute;
-    left: 70px; 
-    top: 20%; 
-    font-size: 24px; 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
-.content{
-    margin-left: 10%;
-    margin-top: 5%;
-}
-.back{
-    opacity: 10%;
-    font-size: 4rem;
-    position: absolute;
-}
-.front{
-    font-size: 4rem;
-    margin-top: 5%;
-}
-pre{
-    font-weight: 400;
-    margin-top: 6%;
-    font-size: 1.4rem;
-}
+  
+  /* Navigation Bar */
+  nav {
+      display: flex;
+      background: linear-gradient(#89d2d9, #dde9ea);
+      justify-content: space-between;
+      align-items: center;
+      height: 10vh;
+  }
+  
+  /* Left side of the Navbar (logo and menu) */
+  .nav-left {
+      display: flex;
+      font-size: 1.2rem;
+      gap: 20px;
+      width: 100%;
+      margin-left: 2%;
+  }
+  
+  /* Branding/Logo */
+  .brand-logo {
+      width: 10%;
+      font-size: larger;
+      font-weight: 800;
+  }
+  
+  /* Navigation Menu */
+  .nav-menu ul {
+      display: flex;
+      list-style-type: none;
+      width: 100%;
+  }
+  
+  .nav-menu li {
+      display: inline-block;
+      margin: 0 5%;
+      padding: 2%;
+  }
+  
+  /* Login Section */
+  .login-section {
+      display: flex;
+      align-items: center;
+      width: 100px;
+  }
+  
+  /* Main Content */
+  main {
+      background-color: #dde9ea;
+      height: 100vh;
+      display: flex;
+      position: relative;
+  }
+  
+  /* Vertical Line for Decorative Purposes */
+  .vertical-line {
+      position: absolute;
+      left: 80px; 
+      height: 100vh; 
+      width: 8px;
+      background-color: #89d2d9;
+  }
+  
+  /* Home Icon */
+  .home-icon {
+      position: absolute;
+      left: 70px; 
+      top: 20%; 
+      font-size: 24px; 
+  }
+  
+  /* Content Area */
+  .content-wrapper {
+      margin-left: 10%;
+      margin-top: 5%;
+  }
+  
+  /* Background Title (Dimmed Text) */
+  .title-background {
+      opacity: 0.1;
+      font-size: 4rem;
+      position: absolute;
+  }
+  
+  /* Foreground Title (Visible Text) */
+  .title-foreground {
+      font-size: 4rem;
+      margin-top: 5%;
+  }
+  
+  /* Description Section */
+  .description pre {
+      font-weight: 400;
+      margin-top: 6%;
+      font-size: 1.4rem;
+  }
+  
